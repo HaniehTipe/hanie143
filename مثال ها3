@@ -1,0 +1,31 @@
+برنامه ای بنویسد که نمره میان ترم و پایان ترم دانشجویی را گرفته و با استفاده از
+یک متد نمره نهایی دانشجو را محاسبه نموده و در متد Main مشخص کند
+که فرد درس را پاس شده یا مردود. 
+نمره نهایی=35%نمره میان ترم+65%پایان ترم
+using System;
+
+namespace project 
+{
+    class test
+    {
+    public static void Main()
+    {
+        Double X = Convert.ToInt32(Console.ReadLine());
+            Double Y = Convert.ToInt32(Console.ReadLine());
+            double Result = Calc(X,Y);
+            if (Result >= 10)
+            {
+                Console.WriteLine("pass");
+            }
+            else
+            {
+                Console.WriteLine("faild");
+            }
+    }//end Main
+    private double Calc(double x,double y)
+    {
+            double Result = (x * 0 / 35) + (y * 0 / 65);
+            return Result;
+        }//end function
+    }//end class
+}//end namespace
