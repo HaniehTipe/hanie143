@@ -1,0 +1,43 @@
+برنامه ای بنویسید که دو عدد از ورودی خوانده و حاصل رادیکال قدر مطلق ایکس+وای به توان دو
+را محاسبه و در خود متد چاپ کند.
+using System;
+
+namespace project 
+{
+    class test
+    {
+    public static void Main()
+    {
+        int X = Convert.ToInt32(Console.ReadLine());
+            int Y= Convert.ToInt32(Console.ReadLine());
+            Calc(X, Y);
+    }//end Main
+    private void Calc(int x,int y)
+    {
+            double Result = Math.Sqrt(Math.Abs(x) + Math.Pow(y, 2));
+            Console.WriteLine(Result);
+        }//end function
+    }//end class
+}//end namespace
+
+برنامه ای بنویسد که مقدار ایکس را از ورودی خوانده و حاصل عبارت  x^2+2x-4  
+داخل متد محاسبه و چاپ کند.
+using System;
+
+namespace project 
+{
+    class test
+    {
+    public static void Main()
+    {
+        int X = Convert.ToInt32(Console.ReadLine());
+            Calc(X);
+    }//end Main
+    private void Calc(int x)
+    {
+            double Result = Math.Pow(x, 2) + (2 * x) - 4;
+            Console.WriteLine(Result);
+        }//end function
+    }//end class
+}//end namespace
+
