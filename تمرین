@@ -1,0 +1,44 @@
+برنامه ای بنویسد که دو عدد از ورودی دریافت کند و در دو تابع مجزا حاصل ب.م.م.وک.م.م.این
+دو عدد را محاسبه و چاپ نماید.در صورتیکه لازم است متدی 
+returnداشته باشد یا نه
+تشخیص ان به عهده برنامه نویس است.
+using System;
+using System.Xml.Schema;
+
+namespace project
+{ 
+    class test
+    {
+    public static void Main()
+    {
+            int X = Convert.ToInt32(Console.ReadLine());
+            int Y = Convert.ToInt32(Console.ReadLine());
+            gcd(X, Y);
+            scd(X, Y);
+        }//end Main
+    private int gcd (int x,int y)
+    {
+            int r = x % y;
+            while(y!=0)
+            {
+                x = y;
+                y = r;
+                r = x % y;
+            }
+            return y;
+        }
+        private void scd (int x,int y)
+        {
+            int r;
+            int p = x + y;
+            do
+            {
+                r = x % y;
+                x = y;
+                y = r;
+            } while (y != 0);
+            Console.WriteLine(y);
+            Console.WriteLine(p / y);
+        }
+    }
+}
